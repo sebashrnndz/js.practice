@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JS | Aplicado</title>
+</head>
+
+<body>
+
+    <h1>Guía de estudio propia para Java Script</h1>
+
+    <section class="easylevel">
+        <h2 class="nivel1">Nivel Básico</h2>
+        <section>
+            <h2>Variables y Tipos de Dato:</h2>
+
+            <div class="partes">
+                <h3>Variables:</h3>
+                <ul>
+                    <li>Contenedores: Almacenan datos que pueden cambiar.</li>
+                    <li>Tipos: `var`, `let`, `const` (cada uno con diferentes características de ámbito y mutabilidad).
+                    </li>
+                </ul>
+            </div>
+
+            <div class="partes">
+                <h3>Tipos de Datos:</h3>
+                <li>Primitivos</li>
+                <p><strong>Boolean:</strong> `true` o `false`.
+                    <br><strong>Null:</strong> Valor nulo (ausencia intencional de valor).
+                    <br><strong>Undefined:</strong> Valor indefinido (variable no inicializada).
+                    <br><strong>Number:</strong> Números enteros o decimales.
+                    <br><strong>String:</strong> Cadenas de texto.
+                    <br><strong>Symbol:</strong> Valores únicos e inmutables.
+                    <br><strong>BigInt:</strong> Números enteros grandes.
+                </p>
+
+                <li>No Primitivos:</li>
+                <p><strong>Object:</strong> Colecciones de datos (arrays, funciones, etc.).</p>
+            </div>
+
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p class="textoejemplo">
+                    let nombre = "Juan"; // String
+                    <br>const edad = 30; // Number
+                    <br>let esEstudiante = false; // Boolean
+                    <br>
+                    <br>let persona = { // Object
+                    <br>nombre: "Ana",
+                    <br>edad: 25
+                    <br>
+                    };
+                </p>
+            </div>
+
+            <div class="partes">
+                <h3>Resumen rápido:</h3>
+                <ul>
+                    <li>Las variables almacenan datos.</li>
+                    <li>Los tipos de datos definen el tipo de valor que puede contener una variable.</li>
+                    <li>JavaScript tiene tipos primitivos (simples) y no primitivos (objetos).</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <h2>Declaracion de Variables</h2>
+
+            <h3>Declaración de Variables en JavaScript</h3>
+            <p>
+                En JavaScript, utilizamos las palabras clave `var`, `let` y `const` para declarar variables. Cada una
+                tiene
+                un ámbito y características diferentes:
+            </p>
+
+            <h4>var:</h4>
+            <P>
+                Ámbito: Funcional o global.
+                <br>Reasignación: Se puede reasignar el valor.
+                <br>Redeclaración: Se puede redeclarar en el mismo ámbito.
+                <br>Hoisting: Las variables declaradas con `var` se "elevan" al principio del ámbito, lo que puede
+                llevar a
+                <br>comportamientos inesperados.
+            </P>
+            <h4>let:</h4>
+            <P>
+                Ámbito: De bloque.
+                <br>Reasignación: Se puede reasignar el valor.
+                <br>Redeclaración: No se puede redeclarar en el mismo ámbito.
+                <br>No hoisting: Las variables declaradas con `let` no se elevan.
+            </P>
+
+            <h4>const:</h4>
+            <P>
+                Ámbito: De bloque.
+                <br>Reasignación: No se puede reasignar el valor.
+                <br>Redeclaración: No se puede redeclarar en el mismo ámbito.
+                <br>No hoisting: Las variables declaradas con `const` no se elevan.
+            </P>
+
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>
+                    // Declaración con var
+                    <br>var nombre = "Juan";
+                    <br>
+                    <br>// Declaración con let
+                    <br>
+                    let edad = 30;
+                    <br>
+                    <br>
+                    // Declaración con const
+                    <br>
+                    const PI = 3.14159;
+                </p>
+
+            </div>
+            <p>
+                Cuándo usar cada una:
+                <br>
+                <br><strong>var: </strong> Generalmente se evita debido a su comportamiento de hoisting y su ámbito
+                funcional.
+                <br><strong>let: </strong> Se utiliza para variables que pueden cambiar de valor dentro de un bloque.
+                <br><strong>const: </strong> Se utiliza para constantes que no deben cambiar su valor.
+                <br>
+                <br>
+                <strong>Recomendaciones: </strong>
+                <br><strong> - Priorizar `let` y `const`:</strong> Son las formas más modernas y seguras de declarar
+                variables.
+                <br><strong> - Evitar `var`:</strong> A menos que estés trabajando con código antiguo.
+                <br><strong> - Utilizar `const` por defecto:</strong> A menos que sepas que el valor va a cambiar.
+                <br>
+                <br>
+                <strong>En resumen: </strong>
+                <br>
+                <strong>`var`:</strong> Antiguo, ámbito funcional, se puede reasignar y redeclarar.
+                <br>
+                <strong>`let`:</strong> Moderno, ámbito de bloque, se puede reasignar pero no redeclarar.
+                <br>
+                <strong>`const`: </strong> Moderno, ámbito de bloque, no se puede reasignar ni redeclarar.
+                <br>
+                ¡Recuerda! La elección de la palabra clave depende del contexto y de si necesitas que el valor de la
+                variable sea mutable o inmutable.
+            </p>
+        </section>
+
+
+
+
+        <section>
+            <h2>Números, Cadenas y Booleanos</h2>
+            <h4> Números (numbers) </h4>
+            <p>
+                Representan valores numéricos, tanto enteros como decimales.
+                <br> Se utilizan para realizar operaciones matemáticas.
+                <br> Ejemplo: `let edad = 30;`, `let pi = 3.14159;`
+            </p>
+            <br>
+            <h4>Cadenas (strings)</h4>
+            <p>
+                Secuencias de caracteres encerradas entre comillas simples o dobles.
+                <br> Se utilizan para representar texto.
+                <br> Ejemplo: `let nombre = "Juan";`, `let saludo = "Hola, mundo!";`
+            </p>
+            <br>
+            <h4>Booleanos (booleans)</h4>
+            <p>
+                Tienen solo dos valores posibles: `true` (verdadero) o `false` (falso).
+                <br> Se utilizan para representar valores lógicos.
+                <br> Ejemplo: `let esMayorDeEdad = true;`, `let estaLloviendo = false;`
+            </p>
+            <br>
+            <br>
+            <h4>
+                Operaciones básicas:
+            </h4>
+            <ul>
+                <li><strong>Números:</strong> Suma (+), resta (-), multiplicación (*), división (/), módulo (%),
+                    incremento (++),
+                    decremento(--).</li>
+                <li> <strong>Cadenas:</strong> Concatenación (+), búsqueda (indexOf), reemplazo (replace),
+                    <br>conversión a mayúsculas/minúsculas(toUpperCase(), toLowerCase()).
+                </li>
+                <li> <strong>Booleanos:</strong> Comparaciones (==, ===, !=, !==), operadores lógicos (&&, ||, !).</li>
+            </ul>
+
+            <div class="ejemplo">
+
+                <h4>Ejemplo de operaciones:</h4>
+
+                <h5>javascript</h5>
+                <p>
+                    <br>let numero1 = 10;
+                    <br>let numero2 = 5;
+                    <br>let resultadoSuma = numero1 + numero2; // resultadoSuma será 15
+                    <br>
+                    <br>let nombre = "Ana";
+                    <br>let saludo = "Hola, " + nombre + "!"; // saludo será "Hola, Ana!"
+                    <br>
+                    <br>let esMayor = 18 > 15; // esMayor será true
+                </p>
+            </div>
+            <br>
+            <h4>Conversión de tipos:</h4>
+            <ul>
+                <li> Puedes convertir un número a una cadena usando `String()`.</li>
+                <li> Puedes convertir una cadena a un número usando `Number()`.</li>
+                <li> Puedes convertir cualquier valor a un booleano usando `Boolean()`.</li>
+            </ul>
+
+            <div class="ejemplo">
+
+                <h4>Ejemplo:</h4>
+
+                <h5>javascript</h5>
+                <p>
+                    let numero = 42;
+                    <br>
+                    let cadena = String(numero); // cadena será "42"
+                    <br>
+                    let cadenaNumero = "10";
+                    <br>
+                    let numeroConvertido = Number(cadenaNumero); // numeroConvertido será 10
+                </p>
+            </div>
+            <p>
+                <strong> En resumen:</strong>
+                <br>Los<strong>números</strong>se usan para cálculos.
+                <br>Las<strong>cadenas</strong>se usan para texto.
+                <br>Los<strong>booleanos</strong>se usan para representar valores de verdad o falsedad.
+            </p>
+
+        </section>
+
+
+
+
+        <section>
+            <h2>Operadores</h2>
+            <ul class="ulTitle">
+                <li>Aritméticos</li>
+                <li>De Asignación</li>
+                <li>Comparación</li>
+                <li>Lógicos</li>
+            </ul>
+            <p>
+                Los operadores en JavaScript son símbolos especiales que realizan operaciones en uno o más valores
+                (operandos). estos son los principales tipos de operadores:
+            </p>
+
+            <br>
+            <h4>Operadores Aritméticos:</h4>
+            <p>
+                <strong>Suma (+):</strong> Suma dos números.
+                <br><strong>Resta (-): </strong> Resta dos números.
+                <br><strong>Multiplicación (*):</strong> Multiplica dos números.
+                <br><strong>División (/):</strong> Divide dos números.
+                <br><strong>Módulo (%):</strong> Devuelve el resto de una división.
+                <br><strong>Incremento (++): </strong> Suma 1 al valor de una variable.
+                <br><strong>Decremento (--): </strong> Resta 1 al valor de una variable.
+            </p>
+
+
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>let x = 10;
+                    <br>let y = 5;
+                    <br>let suma = x + y; // suma será 15
+                    <br>let resta = x - y; // resta será 5
+                </p>
+            </div>
+
+
+            <h4>Operadores de Asignación:</h4>
+            <p>
+                <br><strong>Igual (=):</strong> Asigna un valor a una variable.
+                <br><strong>Suma y asigna (+=):</strong> Suma un valor a una variable y asigna el resultado.
+                <br><strong>Resta y asigna (-=):</strong> Resta un valor a una variable y asigna el resultado.
+                <br><strong>Multiplicación y asigna (*=):</strong> Multiplica un valor a una variable y asigna el
+                resultado.
+                <br><strong>División y asigna (/=):</strong> Divide un valor a una variable y asigna el resultado.
+            </p>
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>
+                    let a = 10;
+                    <br>a += 5; // a ahora es 15
+                </p>
+            </div>
+            <h4>Operadores de Comparación:</h4>
+            <p>
+                <strong>Igual a (==):</strong> Compara si dos valores son iguales.
+                <br> <strong>Estrictamente igual a (===):</strong> Compara si dos valores son iguales en tipo y valor.
+                <br> <strong>Diferente de (!=):</strong> Compara si dos valores son diferentes.
+                <br> <strong>Estrictamente diferente de (!==):</strong> Compara si dos valores son diferentes en tipo o
+                valor.
+                <br> <strong>Mayor que (>):</strong> Compara si un valor es mayor que otro.
+                <br> <strong>Menor que (&lt):</strong> Compara si un valor es menor que otro.
+                <br> <strong>Mayor o igual que (>=):</strong> Compara si un valor es mayor o igual que otro.
+                <br> <strong>Menor o igual que (&lt=):</strong> Compara si un valor es menor o igual que otro.
+            </p>
+
+            <div class="ejemplo">
+                <h4>ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>
+                    let edad = 25;
+                    <br>let esMayorDeEdad = edad >= 18; // esMayorDeEdad será true
+                </p>
+            </div>
+
+            <h4>Operadores Lógicos:</h4>
+            <p>
+                <br><strong>Y (&&):</strong> Devuelve true si ambos operandos son true.
+                <br><strong>O (||):</strong> Devuelve true si al menos uno de los operandos es true.
+                <br><strong>No (!):</strong> Invierte el valor booleano.
+            </p>
+
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>
+                    let tienePermiso = true;
+                    <br>let tieneDinero = false;
+                    <br>let puedeComprar = tienePermiso && tieneDinero; // puedeComprar será false
+                </p>
+            </div>
+
+            <h4>Otros Operadores:</h4>
+            <p>
+                <br><strong>Operadores de cadena:</strong> Concatenación (+), búsqueda (indexOf), reemplazo (replace),
+                etc.
+                <br><strong>Operadores bit a bit:</strong>Operan a nivel de bits (AND, OR, XOR, NOT).
+                <br><strong>Operador de tipoof:</strong> Devuelve el tipo de un valor.
+                <br><strong>Operador instanceof:</strong>Comprueba si un objeto es una instancia de un constructor.
+            </p>
+            <br>
+            <p>
+            <strong>Importante: </strong>
+            <br>
+            El orden de evaluación de los operadores sigue reglas de precedencia. Para asegurarte de
+            que las operaciones se realicen en el orden correcto, puedes utilizar paréntesis.
+        </p>
+
+
+        </section>
+
+        <section>
+            <h2>Condicionales</h2>
+            <ul class="ulTitle">
+                <li>if</li>
+                <li>else if</li>
+                <li>else</li>
+            </ul>
+            <p>
+            Los condicionales en JavaScript nos permiten tomar decisiones en nuestro código, ejecutando
+            diferentesbloques de código según se cumpla o no una determinada condición.
+        </p>
+        <br>
+            <h4>¿Qué son las condiciones?</h4>
+            <p>Son expresiones que evalúan a `true` (verdadero) o `false` (falso). <br><strong>Por ejemplo:</strong></p>
+<div class="ejemplo">
+    <p>
+            `5 > 3` (es verdadero)
+            <br>`'hola' === 'mundo'` (es falso)
+        </p>
+        </div>
+<br>
+        <p>    La estructura básica de un condicional es:</p>
+
+        <div class="ejemplo">
+            <h5>javascript</h5>
+            <p>
+            if (condición) {
+            <br>// Código a ejecutar si la condición es verdadera
+            <br>} else {
+            <br>// Código a ejecutar si la condición es falsa
+            <br>}
+        </p>
+        </div>
+            
+        
+           <div class="ejemplo">
+            <h4>Ejemplo:</h4>
+
+            <h5>javascript</h5>
+            <p>
+            let edad = 18;
+<br>
+            <br>if (edad >= 18) {
+            <br>console.log("Eres mayor de edad.");
+            <br>} else {
+            <br>console.log("Eres menor de edad.");
+            <br>}
+        </p>
+           </div>
+            
+
+            <h4>Condicionales anidados:</h4>
+
+            <p>Puedes anidar múltiples condiciones para crear lógica más compleja:</p>
+
+            <div class="ejemplo">
+                <h5>javascript</h5>
+                <p>
+            let hora = 10;
+<br>
+            <br>if (hora &lt 12) { 
+            <br>console.log("Buenos días."); 
+            <br>} else if (hora &lt 18) { 
+            <br>    console.log("Buenas tardes."); 
+            <br>} else
+            <br>    { console.log("Buenas noches."); 
+            <br>} 
+        </p>
+            </div>
+
+
+                <br>
+                 <h4>Operadores lógicos:</h4> 
+                 <p>
+                 Para combinar múltiples condiciones, utilizamos los operadores lógicos: 
+                 <br><strong>&& (y):</strong>Ambas condiciones deben ser verdaderas. 
+                 <br><strong>|| (o):</strong>Al menos una condición debe ser verdadera. 
+                 <br><strong>! (no):</strong>Niega una condición. 
+                </p>
+                
+                
+                <div class="ejemplo">
+                    <h4>Ejemplo:</h4> 
+                <h5>javascript</h5> 
+
+                <p>
+                <br>    let tieneLicencia=true;
+                <br> let tieneSeguro=false; 
+                <br> 
+                <br> if (tieneLicencia && tieneSeguro) { 
+                <br>    console.log("Puedes conducir."); 
+                <br>} else { 
+                <br>    console.log("No puedes conducir."); 
+                <br>} 
+                </p>
+                </div>
+                
+                
+                
+                
+                    <h4>Operador ternario: </h4>
+                    <p>
+                       Es una forma más concisa de escribir un condicional simple: 
+                    </p>
+                       <div class="ejemplo">
+                    <h5>javascript </h5>
+                        <p>
+                    let esMayor = edad >= 18 ? "Eres mayor" : "Eres menor";
+                    </p>
+                </div>
+                
+                <h4>Resumen:</h4>
+                <p>
+                <br>Los condicionales nos permiten controlar el flujo de ejecución de nuestro código.
+                <br>Utilizamos `if`, `else if` y `else` para crear diferentes ramas en nuestro código.
+                <br>Las condiciones se evalúan a `true` o `false`.
+                <br>Los operadores lógicos nos permiten combinar múltiples condiciones.
+                <br>El operador ternario es una forma más corta de escribir condicionales simples.
+            </p>
+                
+
+
+        </section>
+        <h2>Bucles</h2>
+        <ul class="ulTitle">
+            <li>for</li>
+            <li>do while</li>
+            <li>while</li>
+        </ul>
+
+<p>         Los bucles en JavaScript son estructuras que te permiten repetir un bloque de código varias vecesmientras
+    se cumpla una determinada condición. Son fundamentales para automatizar tareas repetitivas.</p>
+
+        <h4>Tipos de bucles:</h4>
+
+        <h3>while:</h3>
+        <p>Ejecuta un bloque de código mientras una condición se evalúe como verdadera.</p>
+        <h5>Sintaxis:</h5>
+
+        <div class="ejemplo">
+            <h5>javascript</h5>
+        <p>while (condición) {
+            <br>// Código a repetir
+            <br>}</p>
+        </div>
+        
+        <div class="ejemplo">
+            <h4>Ejemplo:</h4>
+            <h5>javascript</h5>
+            <p>let i = 0;
+                <br>while (i &lt 5) { console.log(i); i++; 
+                <br>}</p>
+        </div>
+       
+        
+        <br>
+         <h3>do...while: </h3>
+         <p>
+        Similar a<strong>`while`</strong>, pero garantiza que el bloque de código se ejecute al menos una vez, ya que la condición se verifica al final del bucle. </p>
+        <h5>Sintaxis:</h5> 
+        <div class="ejemplo">
+            <h5>javascript</h5> 
+        <p>
+            do { 
+                <br>    // Código a repetir  
+                <br>} while (condición); 
+        </p>
+        </div>
+            
+            
+            
+            
+            
+             <h3>for:</h3> 
+             <p>Más versátil, permite inicializar una variable, establecer una condición y actualizarla en cada iteración. </p>
+             <h5>Sintaxis:</h5> 
+
+            <div class="ejemplo">
+                <h5>javascript</h5> 
+            <p>for (inicialización; condición; actualización) { 
+                <br>    // Código a repetir 
+                <br>} </p>
+            
+            </div>
+            <div class="ejemplo">    
+             <h4>Ejemplo:</h4> 
+             <h5>javascript</h5> 
+             <p>
+                for (let i = 0; i &lt 5;  i++) {
+                    <br>console.log(i); 
+                <br>} 
+             </p>
+            </div>
+<br>
+             <h4>¿Cuándo usar cada uno? </h4>
+            <p><strong>while:</strong>Cuando no sabes de antemano cuántas veces se ejecutará el bucle, pero tienes una condición clara para detenerlo. </p>
+            <p><strong>do...while:</strong>Cuando necesitas que el código se ejecute al menos una vez, incluso si la condición inicial es falsa. </p>
+            <p><strong>for:</strong>Cuando tienes un contador y sabes exactamente cuántas veces quieres que se repita el bucle. </p>
+            <br>
+            <h4>Otras consideraciones: </h4>
+            <p><strong>break:</strong>Interrumpe la ejecución del bucle inmediatamente. </p>
+            <p><strong>continue:</strong>Salta a la siguiente iteración del bucle. </p>
+            <p><strong>Etiquetas:</strong>Puedes etiquetar bucles para controlar `break` y `continue` en bucles anidados. </p>
+            
+            <h4>Ejemplo con break y continue:</h4>
+            <div class="ejemplo">
+                <h5>javascript</h5> 
+           <p>
+            for (let i = 0; i &lt 10; i++) {
+            <br>&nbsp if (i === 5) { 
+            <br> &nbsp &nbsp break; // Detener el bucle cuando i sea 5 
+            <br>&nbsp} 
+            <br>&nbsp if (i % 2 === 0) { 
+            <br>&nbsp &nbsp continue; // Saltar los números pares 
+            <br>&nbsp}
+            <br>&nbsp console.log(i); // Imprime solo los números impares hasta 4
+            <br>}  
+           </p>
+            </div>
+            
+            
+            
+            <h4>En resumen: </h4>
+           <p> Los bucles son herramientas poderosas en JavaScript que te permiten automatizar tareas
+            repetitivas. La elección del tipo de bucle depende de la lógica de tu programa y de la cantidad de veces que
+            necesites repetir una acción.</p>
+            
+            
+            
+            <section>
+            <h2>Funciones</h2>
+            <h3>definición y algunos ejemplos</h3>
+            <p>Las funciones en JavaScript son como pequeños bloques de código reutilizables que realizan tareas
+                específicas. 
+                <br>Imagina que son como recetas: tienes una serie de pasos para hacer un pastel, y cada vez que
+                quieres un pastel, sigues esa misma receta. En programación, las funciones son como esas recetas.</p>
+<br>
+            <h4>¿Qué es una función en JavaScript?</h4>
+
+            <p><strong>Bloque de código:</strong>Es un conjunto de instrucciones que se ejecutan cuando se llama a la función.</p>
+            <p><strong>Reutilizable:</strong>Puedes definir una función una vez y llamarla muchas veces desde diferentes partes de tu código.</p>
+            <p><strong>Parámetros:</strong>Pueden recibir datos (parámetros) para personalizar su comportamiento.</p>
+            <p><strong>Retorno:</strong>Pueden devolver un resultado (valor de retorno).</p>
+                <br>
+            <h4>Sintaxis básica:</h4>
+            <div class="ejemplo">
+            <h5>javascript</h5>
+                <p>
+                    function nombreDeLaFuncion(parametro1, parametro2, ...) {
+                        <br>    &nbsp // Código que realiza la tarea
+                        <br>    &nbsp return valorDeRetorno; // Opcional
+                        <br>    }
+                </p>
+            </div>
+            
+            <div class="ejemplo">
+                <h4>Ejemplo:</h4>
+                <h5>javascript</h5>
+                <p>
+                    function saludar(nombre) {
+                <br>        &nbsp   console.log("Hola, " + nombre + "!");
+                <br>        }
+            <br>
+                <br>        saludar("Juan"); // Imprime: Hola, Juan!
+                </p>
+            </div>
+            <br>
+            <h3>¿Para qué sirven las funciones?</h3>
+            <p><strong>Organizar el código:</strong> Dividir el código en funciones más pequeñas hace que sea más fácil de leer y mantener.</p>
+            <p><strong>Reutilización:</strong>Evita repetir el mismo código varias veces.</p>
+            <p><strong>Abstracción:</strong>Puedes ocultar la complejidad de ciertas operaciones dentro de una función.</p>
+            <p><strong>Modularidad:</strong>Permite crear módulos de código independientes.</p>
+            <br>
+            <h4>Tipos de funciones:</h4>
+
+            <P><strong>Declarativas:</strong>Se declaran con la palabra clave<strong>`function`</strong>.</P>
+            <P><strong>Expresivas:</strong>Se asignan a una variable.</P>
+            <P><strong>Flecha:</strong>Una sintaxis más concisa para funciones.</P>
+
+
+            <h3>Ejemplo de función flecha:</h3>
+            <div class="ejemplo">            
+            <h5>javascript</h5>
+            <p>
+                const sumar = (a, b) => {
+                    <br>&nbsp return a + b;
+                    <br>};
+                        
+            </p>
+            </div>
+            
+
+            ¿Por qué son importantes las funciones?
+
+            Las funciones son uno de los pilares fundamentales de la programación en JavaScript. Te permiten escribir
+            código
+            más limpio, eficiente y fácil de mantener. Al comprender cómo funcionan las funciones, podrás crear
+            aplicaciones
+            JavaScript más robustas y escalables.
+
+            ¿Quieres ver ejemplos más específicos o tienes alguna pregunta sobre un concepto en particular? Por ejemplo,
+            puedo explicarte cómo funcionan los parámetros, los valores de retorno, o cómo crear funciones más
+            complejas.
+
+
+            <h3>Llamar a la función y parametros</h3>
+            ¡Claro! En JavaScript, llamar a una función es como darle la orden de ejecutar el código que contiene. Es
+            como decir: "Oye, función, haz lo que tienes que hacer".
+
+            ¿Cómo se llama a una función?
+
+            Simplemente escribes el nombre de la función seguido de paréntesis, así:
+
+            ```javascript
+            nombreDeLaFuncion();
+            ```
+
+            Ejemplo:
+
+            Imagina que tienes una función llamada `saludar` que muestra un mensaje en la consola. Para llamarla,
+            escribirías:
+
+            ```javascript
+            function saludar() {
+            console.log("¡Hola!");
+            }
+
+            saludar(); // Esto mostrará "¡Hola!" en la consola
+            ```
+
+            ¿Qué pasa cuando llamas a una función?
+
+            1. El programa llega a la línea donde está la llamada a la función.
+            2. Se detiene la ejecución del código actual y se "salta" al código dentro de la función.
+            3. Se ejecuta el código de la función, paso a paso.
+            4. Una vez que se termina de ejecutar el código de la función, el programa vuelve al punto donde lo dejó y
+            continúa ejecutando el resto del código.
+
+            ¿Qué son los argumentos?
+
+            A veces, las funciones necesitan información adicional para realizar su tarea. Esta información se
+            proporciona a
+            través de argumentos . Los argumentos se colocan dentro de los paréntesis al llamar a la función.
+
+            Ejemplo con argumentos:
+
+            ```javascript
+            function saludar(nombre) {
+            console.log("¡Hola, " + nombre + "!");
+            }
+
+            saludar("Ana"); // Imprimirá: ¡Hola, Ana!
+            ```
+
+            En resumen:
+
+            Llamar a una función es como activar una acción en tu programa. Al llamar a una función, le estás diciendo
+            al
+            programa que ejecute el código que se encuentra dentro de esa función. Los argumentos son como datos que le
+            proporcionas a la función para que pueda realizar su tarea de manera más personalizada.
+
+            ¿Quieres ver más ejemplos o tienes alguna otra pregunta sobre las llamadas a funciones en JavaScript?
+
+            <h3>Retorno de Valores (Return)</h3>
+            ¡Claro! El retorno de valores en JavaScript es una característica fundamental de las funciones que te
+            permite obtener un resultado específico después de ejecutar un bloque de código.
+
+            ¿Qué significa retornar un valor?
+
+            Cuando una función ejecuta su código y llega a una instrucción `return`, el valor que sigue a esa palabra
+            clave
+            se devuelve al lugar donde se llamó a la función. Es como si la función entregara un resultado a quien la
+            llamó.
+
+            Sintaxis:
+
+            ```javascript
+            function miFuncion(parametro1, parametro2) {
+            // Código de la función
+            return valorADevolver;
+            }
+            ```
+
+            Ejemplo:
+
+            ```javascript
+            function sumar(a, b) {
+            let resultado = a + b;
+            return resultado;
+            }
+
+            let suma = sumar(3, 5); // suma tendrá el valor 8
+            ```
+
+            En este ejemplo:
+            La función `sumar` toma dos números como parámetros.
+            Dentro de la función, se suman los dos números y se almacena el resultado en la variable `resultado`.
+            La instrucción `return resultado` devuelve el valor de `resultado` al lugar donde se llamó a la función.
+            El valor devuelto se asigna a la variable `suma`.
+
+            ¿Para qué sirve el retorno de valores?
+
+            Realizar cálculos: Las funciones pueden realizar cálculos complejos y devolver el resultado final.
+            Manipular datos: Pueden transformar datos de entrada en un formato diferente.
+            Tomar decisiones: El valor devuelto puede ser utilizado en condicionales para tomar decisiones.
+            Crear funciones más versátiles: Al devolver valores, las funciones pueden ser utilizadas en una variedad
+            de contextos.
+
+            Ejemplo con condicional:
+
+            ```javascript
+            function esMayorDeEdad(edad) {
+            return edad >= 18;
+            }
+
+            let puedeVotar = esMayorDeEdad(20); // puedeVotar será true
+
+            if (puedeVotar) {
+            console.log("Puedes votar");
+            }
+            ```
+
+            En resumen:
+
+            El retorno de valores en JavaScript permite a las funciones entregar un resultado específico después de su
+            ejecución. Este resultado puede ser utilizado en otras partes del código para realizar cálculos, tomar
+            decisiones o simplemente almacenar un valor. Es una herramienta fundamental para crear funciones más
+            poderosas y
+            flexibles.
+
+            ¿Quieres ver más ejemplos o tienes alguna otra pregunta sobre el retorno de valores en JavaScript?
+            p
+
+
+    </section>
+
+    <script>
+       function cambiarColorPalabra(palabraBuscar, nuevoColor) {
+  // Obtenemos todos los elementos con el tag <p> (puedes cambiar esto por otro selector)
+  const elementos = document.getElementsByTagName('p');
+
+  // Iteramos sobre cada elemento
+  for (let i = 0; i < elementos.length; i++) {
+    const elemento = elementos[i];
+
+    // Convertimos el contenido del elemento a un array de palabras
+    const palabras = elemento.textContent.split(' ');
+
+    // Iteramos sobre cada palabra
+    for (let j = 0; j < palabras.length; j++) {
+      const palabra = palabras[j];
+
+      // Si la palabra coincide con la palabra a buscar, envolvemos en una etiqueta <span> con el nuevo estilo
+      if (palabra === palabraBuscar) {
+        const nuevaPalabra = `<span style="color: ${nuevoColor}">${palabra}</span>`;
+        elemento.innerHTML = elemento.innerHTML.replace(palabra, nuevaPalabra);
+      }
+    }
+  }
+}
+
+// Ejemplo de uso:
+cambiarColorPalabra("function", "#823FA3");
+
+cambiarColorPalabra("for", "#8430D6")
+
+    </script>
+
+</body>
+
+</html>

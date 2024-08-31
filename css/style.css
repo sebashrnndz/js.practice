@@ -1,0 +1,75 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    * {
+  margin: 5px;
+  padding: 0;
+  
+}
+html   {
+    margin: 2rem 10rem;
+    background-color: #c0c0c0;
+    font-family: "Lexend", sans-serif ;
+}
+
+.easylevel  {
+    padding: 3rem;
+    background-color: rgba(8, 70, 28, 0.199);
+    border-radius: 15px;
+}
+
+.nivel1 {
+    color: rgb(71, 105, 76);
+    text-decoration: none;
+}
+
+h1  {
+    margin: 2rem;
+    text-align: center;
+    font-size: 24px;
+    color: #636363;
+}
+
+h2  {
+    text-decoration:underline;
+    margin: 2rem;
+}
+
+p   {
+    font-size: 14px;
+}
+
+li  {
+    font-size: 14px;
+}
+
+.partes {
+    margin: 2rem 0rem;
+}
+
+.ejemplo    {
+    padding: 1rem;
+    border: 2px solid #5a5a5a;
+    background-color: #858585c7;
+    border-radius: 5px;
+    width: 70%;
+    margin: 1rem;
+    font-family:"Roboto Mono", monospace !important;
+    -webkit-box-shadow: 0px 0px 17px -7px rgba(87,87,87,0.5);
+-moz-box-shadow: 0px 0px 17px -7px rgba(87,87,87,0.5);
+box-shadow: 0px 0px 17px -7px rgba(87,87,87,0.5);
+}
+
+.ulTitle    {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0rem 9rem;
+    
+}
+
+.ulTitle li     {
+    font-size: 1rem;
+    font-weight: 600;
+}
