@@ -81,3 +81,45 @@ box-shadow: 0px 0px 17px -7px rgba(87,87,87,0.5);
     
 }
 
+@media screen and (max-width: 768px) {
+    html {
+        margin: 0;
+    }
+    .easylevel  {
+        background-color: rgb(153, 153, 153);
+        margin: none;
+    }
+    h1  {
+        font-size: 0.9rem;
+        margin: none;
+    }
+    h2  {
+        font-size: 0.9rem;
+        margin: none;
+    }
+    h3  {
+        font-size: 0.9rem;
+    }
+    h4  {
+        font-size: 0.9rem;
+    }
+    h5  {
+        font-size: 0.9rem;
+    }
+    p   {
+        font-size: 0.9rem;
+        margin: none;
+    }
+    ul  {
+        font-size: 0.9rem;
+    }
+    li  {
+        font-size: 0.9rem;
+    }
+    .ejemplo    {
+        width: 98%;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+}
