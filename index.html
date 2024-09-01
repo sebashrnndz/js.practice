@@ -10,12 +10,12 @@
 
 <body>
 
-    <h1>Guía de estudio propia para Java Script</h1>
+    <h1>Guía de estudio para JavaScript</h1>
 
     <section class="easylevel">
         <h2 class="nivel1">Nivel Básico</h2>
         <section>
-            <h2>Variables y Tipos de Dato:</h2>
+            <h2>&nbsp Variables y Tipos de Dato:</h2>
 
             <div class="partes">
                 <h3>Variables:</h3>
@@ -27,8 +27,9 @@
             </div>
 
             <div class="partes">
+                <br>
                 <h3>Tipos de Datos:</h3>
-                <li>Primitivos</li>
+                <h4>Primitivos</h4>
                 <p><strong>Boolean:</strong> `true` o `false`.
                     <br><strong>Null:</strong> Valor nulo (ausencia intencional de valor).
                     <br><strong>Undefined:</strong> Valor indefinido (variable no inicializada).
@@ -37,8 +38,9 @@
                     <br><strong>Symbol:</strong> Valores únicos e inmutables.
                     <br><strong>BigInt:</strong> Números enteros grandes.
                 </p>
+                <br>
 
-                <li>No Primitivos:</li>
+                <h4>No Primitivos:</h4>
                 <p><strong>Object:</strong> Colecciones de datos (arrays, funciones, etc.).</p>
             </div>
 
@@ -59,6 +61,7 @@
             </div>
 
             <div class="partes">
+                <br>
                 <h3>Resumen rápido:</h3>
                 <ul>
                     <li>Las variables almacenan datos.</li>
@@ -72,7 +75,9 @@
 
 
         <section>
-            <h2>Declaracion de Variables</h2>
+            <br>
+            <br>
+            <h2>&nbsp Declaracion de Variables</h2>
 
             <h3>Declaración de Variables en JavaScript</h3>
             <p>
@@ -157,21 +162,23 @@
 
 
         <section>
-            <h2>Números, Cadenas y Booleanos</h2>
+            <br>
+            <br>
+            <h2>&nbsp Números, Cadenas y Booleanos</h2>
             <h4> Números (numbers) </h4>
             <p>
                 Representan valores numéricos, tanto enteros como decimales.
                 <br> Se utilizan para realizar operaciones matemáticas.
                 <br> Ejemplo: `let edad = 30;`, `let pi = 3.14159;`
             </p>
-            <br>
+            
             <h4>Cadenas (strings)</h4>
             <p>
                 Secuencias de caracteres encerradas entre comillas simples o dobles.
                 <br> Se utilizan para representar texto.
                 <br> Ejemplo: `let nombre = "Juan";`, `let saludo = "Hola, mundo!";`
             </p>
-            <br>
+            
             <h4>Booleanos (booleans)</h4>
             <p>
                 Tienen solo dos valores posibles: `true` (verdadero) o `false` (falso).
@@ -179,10 +186,8 @@
                 <br> Ejemplo: `let esMayorDeEdad = true;`, `let estaLloviendo = false;`
             </p>
             <br>
-            <br>
-            <h4>
-                Operaciones básicas:
-            </h4>
+        
+            <h3>Operaciones básicas:</h3>
             <ul>
                 <li><strong>Números:</strong> Suma (+), resta (-), multiplicación (*), división (/), módulo (%),
                     incremento (++),
@@ -233,6 +238,7 @@
                 </p>
             </div>
             <p>
+                <br>
                 <strong> En resumen:</strong>
                 <br>Los<strong>números</strong>se usan para cálculos.
                 <br>Las<strong>cadenas</strong>se usan para texto.
@@ -241,24 +247,26 @@
 
         </section>
 
-
-
-
         <section>
-            <h2>Operadores</h2>
+            <br>
+            <br>
+            <h2>&nbsp Operadores</h2>
             <ul class="ulTitle">
                 <li>Aritméticos</li>
                 <li>De Asignación</li>
+            </ul>
+            <ul class="ulTitle">
                 <li>Comparación</li>
                 <li>Lógicos</li>
             </ul>
+            
             <p>
                 Los operadores en JavaScript son símbolos especiales que realizan operaciones en uno o más valores
                 (operandos). estos son los principales tipos de operadores:
             </p>
 
             <br>
-            <h4>Operadores Aritméticos:</h4>
+            <h3>Operadores Aritméticos:</h3>
             <p>
                 <strong>Suma (+):</strong> Suma dos números.
                 <br><strong>Resta (-): </strong> Resta dos números.
@@ -280,10 +288,10 @@
                 </p>
             </div>
 
-
-            <h4>Operadores de Asignación:</h4>
+<br>
+            <h3>Operadores de Asignación:</h3>
             <p>
-                <br><strong>Igual (=):</strong> Asigna un valor a una variable.
+                <strong>Igual (=):</strong> Asigna un valor a una variable.
                 <br><strong>Suma y asigna (+=):</strong> Suma un valor a una variable y asigna el resultado.
                 <br><strong>Resta y asigna (-=):</strong> Resta un valor a una variable y asigna el resultado.
                 <br><strong>Multiplicación y asigna (*=):</strong> Multiplica un valor a una variable y asigna el
@@ -298,7 +306,8 @@
                     <br>a += 5; // a ahora es 15
                 </p>
             </div>
-            <h4>Operadores de Comparación:</h4>
+            <br>
+            <h3>Operadores de Comparación:</h3>
             <p>
                 <strong>Igual a (==):</strong> Compara si dos valores son iguales.
                 <br> <strong>Estrictamente igual a (===):</strong> Compara si dos valores son iguales en tipo y valor.
@@ -319,10 +328,10 @@
                     <br>let esMayorDeEdad = edad >= 18; // esMayorDeEdad será true
                 </p>
             </div>
-
-            <h4>Operadores Lógicos:</h4>
+<br>
+            <h3>Operadores Lógicos:</h3>
             <p>
-                <br><strong>Y (&&):</strong> Devuelve true si ambos operandos son true.
+                <strong>Y (&&):</strong> Devuelve true si ambos operandos son true.
                 <br><strong>O (||):</strong> Devuelve true si al menos uno de los operandos es true.
                 <br><strong>No (!):</strong> Invierte el valor booleano.
             </p>
@@ -336,10 +345,10 @@
                     <br>let puedeComprar = tienePermiso && tieneDinero; // puedeComprar será false
                 </p>
             </div>
-
-            <h4>Otros Operadores:</h4>
+<br>
+            <h3>Otros Operadores:</h3>
             <p>
-                <br><strong>Operadores de cadena:</strong> Concatenación (+), búsqueda (indexOf), reemplazo (replace),
+                <strong>Operadores de cadena:</strong> Concatenación (+), búsqueda (indexOf), reemplazo (replace),
                 etc.
                 <br><strong>Operadores bit a bit:</strong>Operan a nivel de bits (AND, OR, XOR, NOT).
                 <br><strong>Operador de tipoof:</strong> Devuelve el tipo de un valor.
@@ -355,9 +364,10 @@
 
 
         </section>
-
+        <br>
+        <br>
         <section>
-            <h2>Condicionales</h2>
+            <h2>&nbsp Condicionales</h2>
             <ul class="ulTitle">
                 <li>if</li>
                 <li>else if</li>
@@ -405,7 +415,7 @@
             <br>}
         </p>
            </div>
-            
+            <br>
 
             <h4>Condicionales anidados:</h4>
 
@@ -452,10 +462,7 @@
                 <br>} 
                 </p>
                 </div>
-                
-                
-                
-                
+                <br>
                     <h4>Operador ternario: </h4>
                     <p>
                        Es una forma más concisa de escribir un condicional simple: 
@@ -466,10 +473,11 @@
                     let esMayor = edad >= 18 ? "Eres mayor" : "Eres menor";
                     </p>
                 </div>
+                <br>
                 
                 <h4>Resumen:</h4>
                 <p>
-                <br>Los condicionales nos permiten controlar el flujo de ejecución de nuestro código.
+                Los condicionales nos permiten controlar el flujo de ejecución de nuestro código.
                 <br>Utilizamos `if`, `else if` y `else` para crear diferentes ramas en nuestro código.
                 <br>Las condiciones se evalúan a `true` o `false`.
                 <br>Los operadores lógicos nos permiten combinar múltiples condiciones.
@@ -477,9 +485,11 @@
             </p>
                 
 
+<br>
+<br>
 
         </section>
-        <h2>Bucles</h2>
+        <h2>&nbsp Bucles</h2>
         <ul class="ulTitle">
             <li>for</li>
             <li>do while</li>
@@ -488,7 +498,7 @@
 
 <p>         Los bucles en JavaScript son estructuras que te permiten repetir un bloque de código varias vecesmientras
     se cumpla una determinada condición. Son fundamentales para automatizar tareas repetitivas.</p>
-
+<br>
         <h4>Tipos de bucles:</h4>
 
         <h3>while:</h3>
@@ -527,7 +537,7 @@
             
             
             
-            
+            <br>
             
              <h3>for:</h3> 
              <p>Más versátil, permite inicializar una variable, establecer una condición y actualizarla en cada iteración. </p>
@@ -577,16 +587,17 @@
             </div>
             
             
-            
+            <br>
             <h4>En resumen: </h4>
            <p> Los bucles son herramientas poderosas en JavaScript que te permiten automatizar tareas
             repetitivas. La elección del tipo de bucle depende de la lógica de tu programa y de la cantidad de veces que
             necesites repetir una acción.</p>
             
             
-            
+            <br>
+            <br>
             <section>
-            <h2>Funciones</h2>
+            <h2>&nbsp Funciones</h2>
             <h3>definición y algunos ejemplos</h3>
             <p>Las funciones en JavaScript son como pequeños bloques de código reutilizables que realizan tareas
                 específicas. 
@@ -629,13 +640,13 @@
             <p><strong>Abstracción:</strong>Puedes ocultar la complejidad de ciertas operaciones dentro de una función.</p>
             <p><strong>Modularidad:</strong>Permite crear módulos de código independientes.</p>
             <br>
-            <h4>Tipos de funciones:</h4>
+            <h3>Tipos de funciones:</h3>
 
             <P><strong>Declarativas:</strong>Se declaran con la palabra clave<strong>`function`</strong>.</P>
             <P><strong>Expresivas:</strong>Se asignan a una variable.</P>
             <P><strong>Flecha:</strong>Una sintaxis más concisa para funciones.</P>
 
-
+            <br>
             <h3>Ejemplo de función flecha:</h3>
             <div class="ejemplo">            
             <h5>javascript</h5>
