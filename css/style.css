@@ -184,12 +184,16 @@ strong  {
 }
 
 p   {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 350;
 }
 li  {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+}
+strong  {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 
