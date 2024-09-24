@@ -8,10 +8,19 @@
     <title>JS | Aplicado</title>
 </head>
 
-<body>
-
+<header>
     <h1>Guía de estudio para JavaScript</h1>
 
+    <section class="accesos">
+        <div class="accbasc">NIVEL BÁSICO <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#cfcfcf"><path d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z"/></svg> </div>
+            <a class="accmedi" href="html/nivmed.html">NIVEL MEDIO <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#cfcfcf"><path d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z"/></svg></a>
+        <div class="accavan">NIVEL AVANZADO <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#cfcfcf"><path d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z"/></svg> </div>
+    </section>
+    
+
+</header>
+
+<body>
     <section class="easylevel">
         <h2 class="nivel1">Nivel Básico</h2>
         <section>
@@ -21,7 +30,8 @@
                 <h3>Variables:</h3>
                 <ul>
                     <li><strong>Contenedores:</strong> Almacenan datos que pueden cambiar.</li>
-                    <li><strong>Tipos:</strong> `var`, `let`, `const` (cada uno con diferentes características de ámbito y mutabilidad).
+                    <li><strong>Tipos:</strong> `var`, `let`, `const` (cada uno con diferentes características de ámbito
+                        y mutabilidad).
                     </li>
                 </ul>
             </div>
@@ -93,9 +103,10 @@
                 <strong>Ámbito:</strong> Funcional o global.
                 <br><strong>Reasignación:</strong> Se puede reasignar el valor.
                 <br><strong>Redeclaración:</strong> Se puede redeclarar en el mismo ámbito.
-                <br><strong>Hoisting:</strong> Las variables declaradas con `var` se "elevan" al principio del ámbito, lo que puede
+                <br><strong>Hoisting:</strong> Las variables declaradas con `var` se "elevan" al principio del ámbito,
+                lo que puede
                 llevar a comportamientos inesperados.
-                
+
             </P>
             <br>
             <h3>let:</h3>
@@ -106,7 +117,7 @@
                 <br><strong>No hoisting:</strong> Las variables declaradas con `let` no se elevan.
                 <br>
             </P>
-<br>
+            <br>
             <h3>const:</h3>
             <P>
                 <strong>Ámbito:</strong> De bloque.
@@ -135,20 +146,20 @@
             </div>
             <br>
             <p>
-                <h3>Cuándo usar cada una:</h3>
-                <br><strong>var: </strong> Generalmente se evita debido a su comportamiento de hoisting y su ámbito
-                funcional.
-                <br><strong>let: </strong> Se utiliza para variables que pueden cambiar de valor dentro de un bloque.
-                <br><strong>const: </strong> Se utiliza para constantes que no deben cambiar su valor.
-                <br>
-                <br>
-                <strong>Recomendaciones: </strong>
-                <br><strong> - Priorizar `let` y `const`:</strong> Son las formas más modernas y seguras de declarar
-                variables.
-                <br><strong> - Evitar `var`:</strong> A menos que estés trabajando con código antiguo.
-                <br><strong> - Utilizar `const` por defecto:</strong> A menos que sepas que el valor va a cambiar.
-                <br>
-                <br>
+            <h3>Cuándo usar cada una:</h3>
+            <br><strong>var: </strong> Generalmente se evita debido a su comportamiento de hoisting y su ámbito
+            funcional.
+            <br><strong>let: </strong> Se utiliza para variables que pueden cambiar de valor dentro de un bloque.
+            <br><strong>const: </strong> Se utiliza para constantes que no deben cambiar su valor.
+            <br>
+            <br>
+            <strong>Recomendaciones: </strong>
+            <br><strong> - Priorizar `let` y `const`:</strong> Son las formas más modernas y seguras de declarar
+            variables.
+            <br><strong> - Evitar `var`:</strong> A menos que estés trabajando con código antiguo.
+            <br><strong> - Utilizar `const` por defecto:</strong> A menos que sepas que el valor va a cambiar.
+            <br>
+            <br>
             <h4>En resumen: </h4>
             <br>
             <strong>`var`:</strong> Antiguo, ámbito funcional, se puede reasignar y redeclarar.
@@ -860,42 +871,46 @@
         </section>
     </section>
 
-        <section class="medlevel">
-            <h2 class="nivel2">Nivel Medio</h2>
-                <h3>Continuará...</h3>
-        </section>
+    <section class="medlevel">
+        <a href="html/nivmed.html">
+        <h2 class="nivel2">Nivel Medio</h2>
+        <h3>Sigue aprendiendo en el siguiente nivel...</h3>
+        <h4>¡haz click y accede! </h4>
+       <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="20px" fill="#cfcfcf"><path d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z"/></svg>
+    </a>
+    </section>
 
-        <script>
-            function cambiarColorPalabra(palabraBuscar, nuevoColor) {
-                // Obtenemos todos los elementos con el tag <p> (puedes cambiar esto por otro selector)
-                const elementos = document.getElementsByTagName('p');
+    <script>
+        function cambiarColorPalabra(palabraBuscar, nuevoColor) {
+            // Obtenemos todos los elementos con el tag <p> (puedes cambiar esto por otro selector)
+            const elementos = document.getElementsByTagName('p');
 
-                // Iteramos sobre cada elemento
-                for (let i = 0; i < elementos.length; i++) {
-                    const elemento = elementos[i];
+            // Iteramos sobre cada elemento
+            for (let i = 0; i < elementos.length; i++) {
+                const elemento = elementos[i];
 
-                    // Convertimos el contenido del elemento a un array de palabras
-                    const palabras = elemento.textContent.split(' ');
+                // Convertimos el contenido del elemento a un array de palabras
+                const palabras = elemento.textContent.split(' ');
 
-                    // Iteramos sobre cada palabra
-                    for (let j = 0; j < palabras.length; j++) {
-                        const palabra = palabras[j];
+                // Iteramos sobre cada palabra
+                for (let j = 0; j < palabras.length; j++) {
+                    const palabra = palabras[j];
 
-                        // Si la palabra coincide con la palabra a buscar, envolvemos en una etiqueta <span> con el nuevo estilo
-                        if (palabra === palabraBuscar) {
-                            const nuevaPalabra = `<span style="color: ${nuevoColor}">${palabra}</span>`;
-                            elemento.innerHTML = elemento.innerHTML.replace(palabra, nuevaPalabra);
-                        }
+                    // Si la palabra coincide con la palabra a buscar, envolvemos en una etiqueta <span> con el nuevo estilo
+                    if (palabra === palabraBuscar) {
+                        const nuevaPalabra = `<span style="color: ${nuevoColor}">${palabra}</span>`;
+                        elemento.innerHTML = elemento.innerHTML.replace(palabra, nuevaPalabra);
                     }
                 }
             }
+        }
 
-            // Ejemplo de uso:
-            cambiarColorPalabra("function", "#823FA3");
+        // Ejemplo de uso:
+        cambiarColorPalabra("function", "#823FA3");
 
-            cambiarColorPalabra("for", "#8430D6")
+        cambiarColorPalabra("for", "#8430D6")
 
-        </script>
+    </script>
 
 </body>
 

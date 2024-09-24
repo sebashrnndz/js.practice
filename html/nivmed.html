@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JS | Aplicado</title>
+</head>
+<header>
+    <h1>Guía de estudio para JavaScript</h1>
+
+    <section class="accesos">
+        <div class="accbasc">NIVEL BÁSICO <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                width="18px" fill="#cfcfcf">
+                <path
+                    d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z" />
+            </svg> </div>
+        <a class="accmedi" href="html/nivmed.html">NIVEL MEDIO <svg xmlns="http://www.w3.org/2000/svg" height="18px"
+                viewBox="0 -960 960 960" width="18px" fill="#cfcfcf">
+                <path
+                    d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z" />
+            </svg></a>
+        <div class="accavan">NIVEL AVANZADO <svg xmlns="http://www.w3.org/2000/svg" height="18px"
+                viewBox="0 -960 960 960" width="18px" fill="#cfcfcf">
+                <path
+                    d="M231.45-171.27q-25.05 0-42.61-17.57-17.57-17.56-17.57-42.61v-497.1q0-25.05 17.57-42.61 17.56-17.57 42.67-17.57h230.68v47.96H231.54q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v496.92q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h496.92q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-230.65h47.96v230.68q0 25.11-17.57 42.67-17.56 17.57-42.61 17.57h-497.1Zm157.63-183.38-34.43-34.43 351.89-351.69h-137v-47.96h219.19v219.19h-47.96v-137L389.08-354.65Z" />
+            </svg> </div>
+    </section>
+</header>
+
+<body>
+    <section class="medlevel">
+        <h2 class="nivel2">Nivel Intermedio</h2>
+        <section>
+            <h2>&nbsp Arrays:</h2>
+
+
+            <div class="partes">
+
+
+                <h3>¿Qué son los arrays en JavaScript?</h3>
+
+                <p>Los arrays en JavaScript son estructuras de datos que nos permiten almacenar múltiples valores en una
+                    sola variable. Estos valores pueden ser de cualquier tipo, incluyendo números, cadenas, objetos o
+                    incluso otros arrays.</p>
+                <br>
+                <h3>Creación:</h3>
+                <h4>Cómo crear un array:</h4>
+
+                <div class="ejemplo">
+                    <h5>javascript</h5>
+                    <p>let frutas = ["manzana", "banana", "pera"];</p>
+                </div>
+                <br>
+                <h3>Acceso a elementos:</h3>
+
+                <P>Para acceder a un elemento específico de un array, utilizamos su índice (posición), que comienza en
+                    0.</P>
+
+                <div class="ejemplo">
+                    <h5>javascript</h5>
+                    <p>console.log(frutas[0]); // Imprime "manzana"</p>
+                </div>
+
+                <br>
+                <h3>Modificación de elementos:</h3>
+
+                <p>Puedes cambiar el valor de un elemento existente en un array.</p>
+
+                <div class="ejemplo">
+                    <h5>javascript</h5>
+                    <p>frutas[1] = "naranja";
+                        <br> console.log(frutas); // Imprime ["manzana", "naranja", "pera"]
+                    </p>
+                </div>
+
+                <br>
+                <h3>Propiedades de los arrays:</h3>
+
+                <p><strong>length:</strong> Devuelve el número de elementos en el array.</p>
+
+                <br>
+                <h3>Métodos de los arrays:</h3>
+                <p>
+                    <strong>push():</strong> Agrega elementos al final del array.
+                    <br><strong>pop():</strong> Elimina el último elemento del array y lo devuelve.
+                    <br><strong>shift():</strong> Elimina el primer elemento del array y lo devuelve.
+                    <br><strong>unshift():</strong> Agrega elementos al principio del array.
+                    <br><strong>slice():</strong> Crea un nuevo array con una copia de una parte del array original.
+                    <br><strong>splice():</strong> Agrega o elimina elementos en cualquier posición del array.
+                    <br><strong>join():</strong> Convierte un array en una cadena, separando los elementos con un
+                    delimitador especificado.
+                    <br><strong>indexOf():</strong> Devuelve el índice del primer elemento que coincide con el valor
+                    buscado.
+                    <br><strong>includes():</strong> Verifica si un elemento está presente en el array.
+                    <br><strong>forEach():</strong> Itera sobre cada elemento del array y ejecuta una función para cada
+                    uno.
+                    <br><strong>map():</strong> Crea un nuevo array aplicando una función a cada elemento del array
+                    original.
+                    <br><strong>filter():</strong> Crea un nuevo array con los elementos que cumplen una condición
+                    determinada.
+                    <br><strong>reduce():</strong> Combina los elementos del array en un único valor.
+                </p>
+                <h4>Ejemplo de uso:</h4>
+
+                <div class="ejemplo">
+                    <h5>javascript</h5>
+                    <p>
+                        <br> let numeros = [1, 2, 3, 4, 5];
+                        <br>
+                        <br>// Agregar elementos
+                        <br>numeros.push(6, 7);
+                        <br>
+                        <br>// Eliminar elementos
+                        <br>numeros.pop();
+                        <br>numeros.shift();
+                        <br>
+                        <br>// Acceder a elementos
+                        <br>console.log(numeros[2]); // Imprime 3
+                        <br>
+                        <br>// Iterar sobre elementos
+                        <br>numeros.forEach(function(numero) {
+                        <br>&nbsp console.log(numero * 2);
+                        <br>});
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+</body>
+
+</html>
