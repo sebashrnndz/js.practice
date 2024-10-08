@@ -10,7 +10,7 @@
 
 <header>
     <h1>Guía de estudio para JavaScript</h1>
-        <h2 class="madeby">By Sebastián Hernández</h2>
+    <h2 class="madeby">By Sebastián Hernández</h2>
 
     <section class="accesos">
         <a class="accbasc" href="#">NIVEL BÁSICO <svg xmlns="http://www.w3.org/2000/svg" height="18px"
@@ -527,8 +527,10 @@
         <h2>&nbsp Bucles</h2>
         <ul class="ulTitle">
             <li>for</li>
-            <li>do while</li>
+            <li>do...while</li>
             <li>while</li>
+            <li>for...of</li>
+            <li>for...in</li>
         </ul>
 
         <p> Los bucles en JavaScript son estructuras que te permiten repetir un bloque de código varias vecesmientras
@@ -600,6 +602,88 @@
             </p>
         </div>
         <br>
+
+
+
+        <h3>for...of</h3>
+        <p>Permite iterar con muchos elementos de una variable de manera más sencilla</p>
+        <p></p>
+        <div class="ejemplo">
+            <h5>javascript</h5>
+            <p>
+                let animales = ["perro","gato","pez"]
+                <br> for (let animal of animales) {
+                <br> console.log(animal) // imprime cada uno de los elementos del array
+                <br> }
+            </p>
+        </div>
+        <div class="ejemplo">
+            <h4>Más explicito</h4>
+            <p>
+                <strong>let animales = ["perro","gato","pez"]</strong>
+            <br> //       es la declaración del array
+            <br>
+            <br>
+            <strong>for (let animal of animales) {</strong>
+              <br>  // el nombre de la variable <strong>[let animal] </strong>
+               <br>// indica como se llamarían los elementos <strong>["perro","gato","pez"] </strong>
+                <br>// dentro del array <strong>[animales]</strong>
+                <br>// dentro de las llaves <strong>{}</strong> lo que se haría con esa declaracion de elementos y array
+                <br>
+                <br>
+                En el ejemplo: 
+                <br> <strong>console.log(animal) }</strong> 
+                <br>// se imprimen los elementos contenidos en el array, ya que "animal" 
+                fue el nombre que recibió el conjunto de elementos contenidos en el array
+            </p>
+        </div>
+        
+        <br>
+
+
+
+
+
+        <h3>for...in </h3>
+        <p>Permite iterar con todas las propiedades de un elemento en dado caso que no las sepas</p>
+        <div class="ejemplo">
+            <p>
+                let user = {
+                <br> &nbsp id: 1,
+                <br> &nbsp nombre: Juan,
+                <br> &nbsp age: 20,
+                <br> };
+                // tenemos acá una variable con valores asignado a las propiedades
+            </p>
+        </div>
+        <div class="ejemplo">
+            <h5>javascript</h5>
+            <p>
+                for (let prop in user) {
+                <br> &nbsp console.log(prop, user[prop]) //paréntesis cuadrado para acceder a la propiedad
+                <br> } //imprime la propiedad con sus valores
+            </p>
+        </div>
+
+        <div class="ejemplo">
+            <h4>Más explicito</h4>
+            <p>
+                <strong>let personas = ["carlos", "juan", "alberto"];</strong>
+                <br>// este codigo declara el array que contiene nombres
+                <br>
+                <br><strong> for (let indice in personas) {</strong>
+                <br>// declara la variable <strong>"indice"</strong> que en <strong>for in, sólo busca el indice y no los elementos que contiene</strong> el array <strong>"personas".</strong>
+                <br>// para personas busca el indice de cada elemento que contiene, sólo el indice.
+                <br>
+                <br><strong>console.log(indice, personas[indice])</strong>
+                <br>// el console.log busca el "indice" - "0,1,2" que existe.
+                <br>// luego se le pide que dentro de la variable <strong>"personas"</strong> busque los <strong>elementos del indice</strong>
+                <br>// <strong>"[]"</strong> los signos le indican a algoritmo que deben ingresar y buscar los elemento contenidos en la variable personas.
+
+            </p>
+        </div>
+
+        <br>
         <h4>¿Cuándo usar cada uno? </h4>
         <p><strong>while:</strong>Cuando no sabes de antemano cuántas veces se ejecutará el bucle, pero tienes una
             condición clara para detenerlo. </p>
@@ -613,8 +697,33 @@
         <p><strong>continue:</strong>Salta a la siguiente iteración del bucle. </p>
         <p><strong>Etiquetas:</strong>Puedes etiquetar bucles para controlar `break` y `continue` en bucles anidados.
         </p>
+        <br>
 
-        <h4>Ejemplo con break y continue:</h4>
+        <h3>Switch</h3>
+        <p>Similar a if con else if, se puede utilizar dependiendo de la preferencia.</p>
+        <div class="ejemplo">
+            <h5>javascript</h5>
+            <p>
+                let accion = "listar";
+                <br>
+                <br> switch (accion) {
+                <br>&nbsp case "listar":
+                <br>&nbsp &nbsp console.log("Acción de listar");
+                <br>&nbsp &nbsp break;
+                <br>&nbsp case "guardar":
+                <br>&nbsp &nbsp console.log("Acción de guardar");
+                <br>&nbsp &nbsp break;
+                <br>&nbsp default:
+                <br>&nbsp &nbsp console.log("Acción no reconocida");
+                <br> }
+                <br>
+                <br>
+                // mostraría en consola el console.log correspondiente al case listar.
+            </p>
+        </div>
+
+        <br>
+        <h3>Ejemplo con break y continue:</h3>
         <div class="ejemplo">
             <h5>javascript</h5>
             <p>
@@ -896,36 +1005,7 @@
     </a>
     </section>
 
-    <script>
-        function cambiarColorPalabra(palabraBuscar, nuevoColor) {
-            // Obtenemos todos los elementos con el tag <p> (puedes cambiar esto por otro selector)
-            const elementos = document.getElementsByTagName('p');
-
-            // Iteramos sobre cada elemento
-            for (let i = 0; i < elementos.length; i++) {
-                const elemento = elementos[i];
-
-                // Convertimos el contenido del elemento a un array de palabras
-                const palabras = elemento.textContent.split(' ');
-
-                // Iteramos sobre cada palabra
-                for (let j = 0; j < palabras.length; j++) {
-                    const palabra = palabras[j];
-
-                    // Si la palabra coincide con la palabra a buscar, envolvemos en una etiqueta <span> con el nuevo estilo
-                    if (palabra === palabraBuscar) {
-                        const nuevaPalabra = `<span style="color: ${nuevoColor}">${palabra}</span>`;
-                        elemento.innerHTML = elemento.innerHTML.replace(palabra, nuevaPalabra);
-                    }
-                }
-            }
-        }
-
-        // Ejemplo de uso:
-        cambiarColorPalabra("function", "#823FA3");
-
-        cambiarColorPalabra("for", "#8430D6")
-
+    <script src="js/ejercicios.js">
     </script>
 
 </body>
